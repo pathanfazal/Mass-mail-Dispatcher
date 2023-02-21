@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Mass Mail Dispatcher</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            </li><a href="http://exposysdata.com/">
+                <h1>Exposys Data Lab</h1>
+            </a></li>
+        </ul>
+    </nav>
+    <div class="bg">
+        <div class="container ">
+            <div class="select animated fadeInDown delay-4s">
+                <h1 id="head">Mass Mail Dispatcher</h1>
+                <input type="file" id="upload" accept="text/csv">
+            </div>
+            <div class="mailInfo">
+                <form onsubmit="sendEmail(); reset(); return false;">
+                    <h2 id="box-heading">WRITE YOUR MAIL HERE</h2>
+                    <p><input type="email" id="from" placeholder="From (Email ID)" required></p>
+
+                    <p><input type="text" id="subject" placeholder="Subject" required></p>
+                    <p><textarea id="msg" rows="12" cols="12" placeholder="Body" required></textarea></p>
+                    <p><button type="submit" id="submit">Send</button></p>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <div class="tables">
+            <div class="valTab">
+               
+                            <table id="val">
+                                <tr>
+                                    <td>
+                                        <h2>Valid Emails : <span id="valCount"></span></h2>
+                                    </td>
+                                </tr>
+                            </table>          
+            </div>
+            <div class="invalTab">
+                <table id="inval">
+                    <tr>
+                        <td>
+                            <h2>Invalid Emails : <span id="invalCount"></span></h2>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    </section>
+    <hr>
+    <script src="main.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    
+    <script>
+    var wow = new WOW(
+            {
+                boxClass: 'wow',
+                animateClass: 'animated',
+                offset: 0,
+                mobile: true,
+                live: true,
+                callback: function (box) {
+                },
+                scrollContainer: null,
+                resetAnimation: true,
+            }
+        );
+        wow.init();
+    </script>
+    <div class="footer-basic">
+        <footer>
+            <p class="copyright"><a href="https://www.linkedin.com/in/pathan-mohammad-fazal-882728213"target="_blank"><img src="linkedin.png" alt=""></a><br>Made By Mohammad Fazal</p>
+        </footer>
+    </div>
+</body>
+</body>
+
+</html>

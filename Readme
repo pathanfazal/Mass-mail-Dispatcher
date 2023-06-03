@@ -1,17 +1,25 @@
 Web based Mass Mail Dispatcher
 
-Mass Mailer is a web application designed to facilitate the sending of Mass emails to a list of recipients. It provides a simple interface for users to upload a CSV file containing their email address, then compose and send email.
+Mass Mailer is a web application designed to facilitate the sending of Mass emails to a list of recipients. 
+It provides a simple interface for users to upload a CSV file containing their email address, then compose and send email.
 
-The HTML structure of the application is divided into several sections. The following page contains the application logo and name, providing a link to the Exposys Data Lab website. The main section contains an export file that allows the user to select a CSV file containing their email address.
+The HTML structure of the application is divided into several sections. The following page contains the application logo and name, 
+providing a link to the Exposys Data Lab website. The main section contains an export file that allows the user to select a CSV file containing their email address.
 Below is a form for writing an email with fields for the sender's email address, subject, and body language. The "Send" button starts the e-mailing process.
 
-The application has user side validation of uploaded CSV files. After selecting the file, the JavaScript code reads its content and splits it into rows and columns. All email addresses are checked for a valid extension (".
-com" or ".org")). Valid email addresses are listed in the table labeled "Valid Email", while invalid addresses are listed in the table labeled "Invalid Email". It also indicates that it is valid and does not use any email.
+The application has user side validation of uploaded CSV files. After selecting the file, the JavaScript code reads its content and splits it into rows and columns. 
+All email addresses are checked for a valid extension (".
+com" or ".org")). Valid email addresses are listed in the table labeled "Valid Email", while invalid addresses are listed in the table labeled "Invalid Email". 
+It also indicates that it is valid and does not use any email.
 
 Send email, app is using SMTP.
-JavaScript library that allows sending email using SMTP (Simple Mail Transfer Protocol). The 'sendEmail()' function is triggered when a mail is sent and sends an email using the SMTP server details including host, username, password, address and email address, context (object and body).
+JavaScript library that allows sending email using SMTP (Simple Mail Transfer Protocol). The 'sendEmail()' function is triggered when a mail is sent and sends 
+an email using the SMTP server details including host, username, password, address and email address, context (object and body).
 
-The creator of the application includes background images and various CSS styles to improve the visual experience. It also includes the WOW.JavaScript library to animate content when the user scrolls the page.
+The creator of the application includes background images and various CSS styles to improve the visual experience. It also includes the WOW.JavaScript library to 
+animate content when the user scrolls the page.
 Finally, the section contains the founder's information and a link to his LinkedIn profile.
 
-Overall, Mass Mail Dispatcher provides a simple solution for sending Mass emails by allowing users to upload a CSV file containing their email address, compose an email and send it using SMTP. It provides easy-to-use tools to ensure the accuracy of email addresses and provides users with a user-friendly interface that is easy to interact with.
+Overall, Mass Mail Dispatcher provides a simple solution for sending Mass emails by allowing users to upload a CSV file containing their email address, 
+compose an email and send it using SMTP. It provides easy-to-use tools to ensure the accuracy of email addresses and provides users with a user-friendly interface 
+that is easy to interact with.
